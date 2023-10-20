@@ -18,10 +18,13 @@ cd python-3.10.11-embed-amd64/Scripts
 set FLASK_APP=superset
 
 :: Load some data to play with (optional)
+
 superset load_examples
 
 :: Create default roles and permissions
+
 superset init
 
 :: Start web server on port 8088
+
 superset run -p 8088 --with-threads --reload --debugger
